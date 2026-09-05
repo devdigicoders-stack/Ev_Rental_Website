@@ -62,7 +62,7 @@ const ImpactStats = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
           {stats.map((stat, index) => (
             <div className="py-4 md:py-0 px-4 flex flex-col items-center justify-center transition-transform hover:scale-105" key={index}>
-              <div className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-2 tracking-tight">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-2 tracking-tight">
                 <AnimatedCounter end={stat.value} duration={2500} />
               </div>
               <div className="text-sm md:text-base font-medium uppercase tracking-wider text-trisBlue-light opacity-90 text-white">

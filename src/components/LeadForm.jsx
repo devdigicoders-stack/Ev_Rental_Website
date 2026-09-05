@@ -36,13 +36,13 @@ const LeadForm = () => {
   return (
     <section className="py-20 bg-[#F4F4F4]" id="contact">
       <div className="container">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
           
           {/* Left Side: Graphic */}
           <div className="w-full lg:w-1/2 relative flex justify-center items-center">
             <div className="relative">
               {/* Speech Bubble */}
-              <div className="absolute -top-12 right-0 bg-white border-2 border-gray-900 rounded-3xl px-6 py-3 text-center shadow-md z-10 hidden md:block">
+              <div className="absolute -top-8 right-0 bg-white border-2 border-gray-900 rounded-3xl px-6 py-3 text-center shadow-md z-10 hidden md:block">
                 <p className="font-heading font-black text-sm uppercase text-gray-900 leading-tight">
                   SIGN UP NOW<br/>AND START SAVING
                 </p>
@@ -97,7 +97,7 @@ const LeadForm = () => {
             </div>
 
             {isSubmitted ? (
-              <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 text-center animate-fade-in-up">
+              <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center animate-fade-in-up">
                 <div className="w-20 h-20 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center mx-auto mb-4 relative">
                   <div className="absolute inset-0 border-4 border-trisGreen rounded-full animate-ping opacity-20"></div>
                   <FaCheckCircle className="w-10 h-10" />
@@ -117,6 +117,7 @@ const LeadForm = () => {
                     </div>
                     <input 
                       name="name"
+                      placeholder='enter your name here '
                       value={formData.name}
                       onChange={handleChange}
                       type="text" 
@@ -135,6 +136,7 @@ const LeadForm = () => {
                     </div>
                     <input 
                       name="email"
+                      placeholder='enter your email here ' 
                       value={formData.email}
                       onChange={handleChange}
                       type="email" 
@@ -153,6 +155,7 @@ const LeadForm = () => {
                     </div>
                     <input 
                       name="mobile"
+                      placeholder='enter your mobile here ' 
                       value={formData.mobile}
                       onChange={handleChange}
                       type="tel" 
@@ -199,6 +202,7 @@ const LeadForm = () => {
                       </div>
                       <input 
                         name="company"
+                        placeholder='enter your company name here '  
                         value={formData.company}
                         onChange={handleChange}
                         type="text" 

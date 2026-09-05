@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-trisDark text-white pt-20 pb-10 font-body">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           
           {/* Column 1: Company Info */}
           <div className="flex flex-col items-start">
@@ -41,15 +41,14 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-trisBlue text-xl shrink-0 mt-1" />
                 <p className="leading-relaxed text-sm">
                   <span className="text-white font-bold block mb-1">Head Office:</span>
-                  AIHP Executive Center,<br/>
-                  Plot No. 48, Institutional Area,<br/>
-                  Sector 32, Gurugram, Haryana 122001
+                  VIP Road, Alambagh,<br/>
+                  Lucknow, Uttar Pradesh 226005
                 </p>
               </div>
               
               <div className="flex items-center gap-4 text-gray-400 hover:text-trisBlue transition-colors text-sm">
                 <FaEnvelope className="text-trisBlue text-xl shrink-0" />
-                <a href="mailto:support@tristechnology.com">support@tristechnology.com</a>
+                <a href="mailto:Triss.electric@gmail.com">Triss.electric@gmail.com</a>
               </div>
               
               <div className="flex items-center gap-4 text-gray-400 hover:text-trisBlue transition-colors text-sm">
@@ -73,7 +72,7 @@ const Footer = () => {
               <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#1DA1F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(29,161,242,0.6)] transition-all">
                 <FaTwitter className="text-xl" />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#E1306C] hover:scale-110 hover:shadow-[0_0_15px_rgba(225,48,108,0.6)] transition-all">
+              <a href="https://www.instagram.com/tris.electric?igsi=Y3EzenVob2tnNGkz" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#E1306C] hover:scale-110 hover:shadow-[0_0_15px_rgba(225,48,108,0.6)] transition-all">
                 <FaInstagram className="text-xl" />
               </a>
               <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.6)] transition-all">
@@ -85,7 +84,10 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-medium">
-          <p>Copyright © 2024 - TravelTech Experiences Pvt. Ltd. (Operated as Tris)</p>
+          <p>
+            Copyright © 2024 - TravelTech Experiences Pvt. Ltd. (Operated as Tris) <br/>
+            Crafted By <a href="https://digicoders.in" target="_blank" rel="noopener noreferrer" className="text-trisBlue hover:underline">Team DigiCoders</a>
+          </p>
           <div className="flex space-x-6">
             <Link to="/terms" className="hover:text-trisBlue transition-colors">Terms of Service</Link>
             <Link to="/privacy" className="hover:text-trisBlue transition-colors">Privacy Policy</Link>

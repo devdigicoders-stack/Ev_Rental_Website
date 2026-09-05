@@ -35,21 +35,25 @@ const AboutVision = () => {
           <div className="w-full lg:w-1/2 relative">
             <div className="absolute inset-0 bg-trisBlue/10 rounded-[3rem] -rotate-6 transform scale-105 -z-10 transition-transform duration-500 hover:rotate-0"></div>
             <img 
-              src="/blaze_scooter.jpg" 
+              src="/blaze_scooter.png" 
               alt="Tris Electric Vision" 
-              className="w-full rounded-[3rem] shadow-2xl object-cover h-[500px]"
+              className="w-full rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] object-cover h-[400px] md:h-[500px]"
             />
           </div>
 
           {/* Text Section */}
           <div className="w-full lg:w-1/2">
-            <div className="badge bg-trisBlue-light text-trisBlue mb-6 tracking-widest px-4 py-2 font-bold">OUR STORY</div>
+            <div className="badge bg-gradient-to-r from-trisBlue to-trisGreen text-white mb-6 tracking-widest px-5 py-2 font-bold shadow-[0_5px_15px_rgba(30,160,229,0.3)] border-none relative overflow-hidden group">
+              <span className="relative z-10">OUR STORY</span>
+              <div className="absolute inset-0 bg-white opacity-20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out z-0"></div>
+            </div>
             
-            <h2 className="text-3xl md:text-5xl font-heading font-black uppercase mb-6 text-gray-900 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-heading font-extrabold uppercase mb-6 text-gray-800 leading-tight relative tracking-tight">
+              <div className="absolute -left-10 -top-10 w-20 h-20 bg-trisBlue/10 rounded-full blur-2xl"></div>
               Your Most Trusted <br className="hidden md:block"/>
-              <span className="text-trisGreen relative">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisGreen to-trisBlue relative inline-block drop-shadow-sm">
                 green delivery
-                <span className="absolute bottom-2 left-0 w-full h-3 bg-trisGreen opacity-20 -z-10"></span>
+                <div className="absolute -bottom-1 left-0 right-0 h-[4px] bg-gradient-to-r from-trisGreen to-trisBlue rounded-full opacity-40 transform -skew-x-12"></div>
               </span> and <br className="hidden md:block"/>
               last mile partner
             </h2>
@@ -59,17 +63,19 @@ const AboutVision = () => {
               {visionStatements.map((item, index) => (
                 <div 
                   key={index}
-                  className={`absolute top-0 left-0 w-full transition-all duration-700 ease-in-out ${activeSlide === index ? 'opacity-100 translate-x-0 pointer-events-auto' : 'opacity-0 translate-x-8 pointer-events-none'}`}
+                  className={`absolute top-0 left-0 w-full transition-all duration-700 ease-out ${activeSlide === index ? 'opacity-100 translate-y-0 scale-100 pointer-events-auto' : 'opacity-0 translate-y-8 scale-95 pointer-events-none'}`}
                 >
-                  <div className="relative mb-8">
-                    <FaQuoteLeft className="absolute -top-4 -left-4 text-trisBlue/10 w-16 h-16 -z-10" />
-                    <p className="text-lg md:text-xl text-trisGray-text leading-relaxed font-medium">
+                  <div className="relative mb-6 group">
+                    <FaQuoteLeft className="absolute -top-6 -left-6 text-trisBlue/10 w-20 h-20 -z-10 transform -rotate-12 transition-transform duration-500 group-hover:rotate-0" />
+                    <p className="text-lg md:text-xl text-trisGray-text leading-relaxed font-medium pl-4 border-l-[3px] border-trisBlue/20">
                       {item.text}
                     </p>
                   </div>
                   
-                  <div className="bg-trisGray-light p-6 md:p-8 rounded-2xl border-l-4 border-trisBlue shadow-sm">
-                    <p className="text-lg md:text-2xl font-heading font-bold text-trisBlue uppercase tracking-wide leading-snug">
+                  <div className="bg-gradient-to-br from-white to-gray-50/80 p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-[0_10px_40px_rgba(0,0,0,0.05)] relative overflow-hidden group">
+                    <div className="absolute inset-0 bg-gradient-to-r from-trisBlue/5 to-trisGreen/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-trisBlue to-trisGreen"></div>
+                    <p className="text-lg md:text-xl font-heading font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 uppercase tracking-wide leading-snug relative z-10">
                       {item.quote}
                     </p>
                   </div>

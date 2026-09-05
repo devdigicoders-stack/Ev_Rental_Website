@@ -5,7 +5,7 @@ import { FaRoute, FaIdCard, FaMotorcycle, FaWeightHanging, FaUserFriends, FaTach
 const plans = [
   {
     name: 'BLAZE PLAN',
-    image: '/blaze_scooter.jpg',
+    image: '/blaze_scooter.png',
     color: '#1EA0E5', // trisBlue
     specs: [
       { label: 'RANGE', value: '75+ Km', icon: FaRoute },
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: 'SHINE PLAN',
-    image: '/shine_scooter.jpg',
+    image: '/shine_scooter.png',
     color: '#25D366', // trisGreen
     specs: [
       { label: 'RANGE', value: '90+ Km', icon: FaRoute },
@@ -33,7 +33,7 @@ const plans = [
   },
   {
     name: 'FLARE PLAN',
-    image: '/plan_moped.jpg', // The original red one
+    image: '/plan_moped.png', // The original red one
     color: '#F05A41', // Orange/Red
     specs: [
       { label: 'RANGE', value: '120+ Km', icon: FaRoute },
@@ -65,7 +65,7 @@ const SubscriptionPlans = () => {
       <div className="container">
         <div className="text-center mb-16">
           <div className="badge bg-trisBlue-light text-trisBlue mb-4 px-4 py-2 uppercase tracking-widest font-bold">Pricing</div>
-          <h2 className="text-3xl md:text-5xl font-heading font-black uppercase mb-4 text-gray-900">
+          <h2 className="text-2xl md:text-4xl font-heading font-black uppercase mb-4 text-gray-900">
             SUBSCRIPTION <span className="text-trisBlue">PLANS</span>
           </h2>
           <p className="text-trisGray-text font-medium max-w-2xl mx-auto">
@@ -74,105 +74,84 @@ const SubscriptionPlans = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
-          {/* Left Side: Graphic Rider Image */}
-          <div className="w-full lg:w-1/2 relative h-[400px] md:h-[500px] hidden md:flex justify-center items-center rounded-3xl overflow-hidden bg-gray-50/30">
-            <img 
-              src="/rider_wave.jpg" 
-              alt="Delivery Rider" 
-              className="w-full h-full object-contain relative z-10"
-            />
-            {/* Watermark Logo */}
-            <div className="absolute bottom-8 right-8 z-20 opacity-80 drop-shadow-lg">
-              <img src="/Tris _logo.png" alt="Tris Logo" className="h-8 md:h-12 object-contain" />
-            </div>
-          </div>
-
-          {/* Right Side: Plan Carousel */}
-          <div 
-            className="w-full lg:w-1/2" 
-            onMouseEnter={() => setIsHovered(true)} 
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            {/* Carousel Window */}
-            <div className="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden relative w-full max-w-md mx-auto">
-              
-              {/* Sliding Track */}
-              <div 
-                className="flex transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] w-full"
-                style={{ transform: `translateX(-${activePlan * 100}%)` }}
-              >
-                {plans.map((plan, idx) => (
-                  <div key={idx} className="w-full flex-shrink-0 flex flex-col">
-                    
-                    {/* Product Image Area */}
-                    <div className="w-full h-64 md:h-[320px] bg-gray-50 flex items-center justify-center relative overflow-hidden">
-                      <div 
-                        className="absolute inset-0 opacity-[0.2] blur-3xl transition-colors duration-500" 
-                        style={{ backgroundColor: plan.color }}
-                      ></div>
-                      <img 
-                        src={plan.image} 
-                        alt={plan.name} 
-                        className="w-full h-full object-contain mix-blend-multiply relative z-10 transition-transform duration-500 hover:scale-105" 
-                      />
+        <div className="flex flex-col items-center gap-12 w-full mt-12">
+          {/* Plan Carousel */}
+          <div className="w-full relative px-4">
+            {/* Scroll Container */}
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 pt-4 hide-scrollbar">
+              {plans.map((plan, idx) => (
+                <div 
+                  key={idx} 
+                  className="w-[85vw] sm:w-[320px] shrink-0 snap-center bg-white rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-gray-100 overflow-hidden flex flex-col transition-transform hover:-translate-y-2 duration-300"
+                >
+                  
+                  {/* Product Image Area */}
+                  <div className="w-full h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden group">
+                    <div 
+                      className="absolute inset-0 opacity-[0.15] blur-3xl transition-opacity duration-500 group-hover:opacity-[0.25]" 
+                      style={{ backgroundColor: plan.color }}
+                    ></div>
+                    <img 
+                      src={plan.image} 
+                      alt={plan.name} 
+                      className="w-full h-full object-contain mix-blend-multiply relative z-10 transition-transform duration-500 group-hover:scale-110 p-4" 
+                    />
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold tracking-wider shadow-sm" style={{ color: plan.color }}>
+                      MOST POPULAR
                     </div>
-
-                    {/* Plan Details */}
-                    <div className="p-8 bg-white flex-grow">
-                      <div className="flex justify-between items-center border-b border-gray-100 pb-5 mb-6">
-                        <h3 
-                          className="text-2xl font-heading font-black tracking-wide transition-colors duration-500"
-                          style={{ color: plan.color }}
-                        >
-                          {plan.name}
-                        </h3>
-                        <Link 
-                          to="/contact" 
-                          className="text-white text-xs md:text-sm font-bold uppercase py-2.5 px-6 rounded-full shadow-md transition-transform hover:-translate-y-1"
-                          style={{ backgroundColor: plan.color }}
-                        >
-                          SUBSCRIBE NOW
-                        </Link>
-                      </div>
-
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
-                        {plan.specs.map((spec, index) => {
-                          const Icon = spec.icon;
-                          return (
-                            <div key={index} className="flex items-center gap-3">
-                              <div 
-                                className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-500"
-                                style={{ backgroundColor: `${plan.color}15`, color: plan.color }}
-                              >
-                                <Icon className="w-4 h-4" />
-                              </div>
-                              <div>
-                                <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-0.5">{spec.label}</div>
-                                <div className="text-sm font-semibold text-gray-900">{spec.value}</div>
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-
                   </div>
-                ))}
-              </div>
+
+                  {/* Plan Details */}
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 
+                      className="text-xl font-heading font-black tracking-wide mb-6"
+                      style={{ color: plan.color }}
+                    >
+                      {plan.name}
+                    </h3>
+
+                    <div className="grid grid-cols-1 gap-y-4 mb-8 flex-grow">
+                      {plan.specs.slice(0, 4).map((spec, index) => {
+                        const Icon = spec.icon;
+                        return (
+                          <div key={index} className="flex items-center gap-3">
+                            <div 
+                              className="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
+                              style={{ backgroundColor: `${plan.color}15`, color: plan.color }}
+                            >
+                              <Icon className="w-3.5 h-3.5" />
+                            </div>
+                            <div>
+                              <div className="text-[9px] font-bold text-gray-400 uppercase tracking-wider">{spec.label}</div>
+                              <div className="text-sm font-semibold text-gray-800 leading-tight">{spec.value}</div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    
+                    <Link 
+                      to="/contact" 
+                      className="text-white text-xs font-bold uppercase py-3.5 px-6 rounded-full shadow-lg text-center transition-all hover:shadow-xl hover:scale-[1.02]"
+                      style={{ 
+                        backgroundColor: plan.color,
+                        boxShadow: `0 10px 20px ${plan.color}40`
+                      }}
+                    >
+                      SUBSCRIBE NOW
+                    </Link>
+                  </div>
+                </div>
+              ))}
             </div>
 
-            {/* Pagination Dots */}
-            <div className="flex justify-center mt-8 gap-3">
-              {plans.map((plan, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActivePlan(index)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${activePlan === index ? 'w-8' : 'w-2.5 bg-gray-300 hover:bg-gray-400'}`}
-                  style={{ backgroundColor: activePlan === index ? plan.color : undefined }}
-                  aria-label={`View ${plan.name}`}
-                />
-              ))}
+            {/* Scroll Instructions (Mobile) */}
+            <div className="flex justify-center mt-2 md:hidden">
+              <span className="text-xs text-gray-400 font-medium uppercase tracking-widest flex items-center gap-2">
+                <svg className="w-4 h-4 animate-bounce-x" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                Swipe to explore
+                <svg className="w-4 h-4 animate-bounce-x" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </span>
             </div>
           </div>
         </div>

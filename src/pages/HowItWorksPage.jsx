@@ -46,7 +46,7 @@ const HowItWorksPage = () => {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black mb-6 text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black mb-6 text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
               Get Started in <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisGreen via-trisBlue to-trisGreen bg-[length:200%_auto] animate-shine">
                 3 Easy Steps
@@ -75,10 +75,10 @@ const HowItWorksPage = () => {
       <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="container relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-heading font-black uppercase mb-4 text-gray-900">
+            <h2 className="text-2xl md:text-4xl font-heading font-black uppercase mb-4 text-gray-900">
               What You <span className="text-trisBlue">Need</span>
             </h2>
-            <p className="text-lg text-trisGray-text max-w-2xl mx-auto font-medium">
+            <p className="text-base text-trisGray-text max-w-2xl mx-auto font-medium">
               We've kept the requirements minimal so you can start riding immediately. Make sure you have these ready before you begin.
             </p>
           </div>
@@ -134,7 +134,7 @@ const HowItWorksPage = () => {
         </div>
         
         <div className="container relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white uppercase mb-6 drop-shadow-lg">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black text-white uppercase mb-6 drop-shadow-lg">
             Ready To Start Your <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisGreen via-trisBlue to-trisGreen animate-shine bg-[length:200%_auto]">
               Journey?

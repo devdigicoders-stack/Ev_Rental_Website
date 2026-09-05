@@ -30,9 +30,12 @@ const CoreValues = () => {
     <section className="py-24 bg-trisGray-light">
       <div className="container">
         <div className="text-center mb-16">
-          <div className="badge bg-white text-gray-900 shadow-sm mb-4 px-4 py-2 uppercase tracking-widest font-bold">What Drives Us</div>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-gray-900 uppercase">
-            Our <span className="text-trisBlue">Core Values</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-trisBlue/10 border border-trisBlue/20 mb-4">
+            <span className="w-2.5 h-2.5 rounded-full bg-trisBlue"></span>
+            <span className="text-trisBlue font-bold tracking-widest text-xs uppercase">Our Core Values</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-800 uppercase tracking-tight">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisBlue to-trisGreen drop-shadow-sm">Core Values</span>
           </h2>
         </div>
 
@@ -40,7 +43,7 @@ const CoreValues = () => {
           {values.map((value, index) => {
             const Icon = value.icon;
             return (
-              <div key={index} className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
+              <div key={index} className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 ${value.bg} ${value.color}`}>
                   <Icon className="w-8 h-8" />
                 </div>

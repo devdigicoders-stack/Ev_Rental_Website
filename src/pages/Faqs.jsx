@@ -89,7 +89,7 @@ const Faqs = () => {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black mb-6 text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black mb-6 text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
               Frequently Asked <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisGreen via-trisBlue to-trisGreen bg-[length:200%_auto] animate-shine">
                 Questions

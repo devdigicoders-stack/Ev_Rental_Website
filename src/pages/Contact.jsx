@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black mb-6 text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black mb-6 text-white uppercase tracking-tight leading-tight drop-shadow-2xl">
               We're Here to <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisGreen via-trisBlue to-trisGreen bg-[length:200%_auto] animate-shine">
                 Help You
@@ -89,7 +89,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
               <p className="text-gray-500 mb-4 text-sm">Send us a message anytime</p>
-              <a href="mailto:support@tristechnology.com" className="text-trisBlue font-bold text-lg hover:underline mt-auto truncate w-full">support@tristechnology.com</a>
+              <a href="mailto:Triss.electric@gmail.com" className="text-trisBlue font-bold text-lg hover:underline mt-auto truncate w-full">Triss.electric@gmail.com</a>
             </div>
             
             {/* Card 3 */}
@@ -98,8 +98,8 @@ const Contact = () => {
                 <FaMapMarkerAlt />
               </div>
               <h3 className="text-xl font-bold mb-2">Head Office</h3>
-              <p className="text-gray-500 mb-4 text-sm">AIHP Executive Center</p>
-              <p className="text-gray-900 font-bold text-sm mt-auto">Sector 32, Gurugram, Haryana</p>
+              <p className="text-gray-500 mb-4 text-sm">VIP Road, Alambagh</p>
+              <p className="text-gray-900 font-bold text-sm mt-auto">Lucknow, Uttar Pradesh 226005</p>
             </div>
             
             {/* Card 4 */}
@@ -127,7 +127,7 @@ const Contact = () => {
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-30"></div>
         </div>
         <div className="container relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white uppercase mb-6 drop-shadow-lg">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black text-white uppercase mb-6 drop-shadow-lg">
             Still Have <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisGreen via-trisBlue to-trisGreen animate-shine bg-[length:200%_auto]">
               Questions?

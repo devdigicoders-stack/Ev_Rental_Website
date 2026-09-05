@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   const navLinkClass = ({ isActive }) =>
-    `relative font-heading font-bold text-lg tracking-wide uppercase transition-colors duration-200 
+    `relative font-heading font-bold text-sm tracking-wide uppercase transition-colors duration-200 
      ${isActive ? 'text-trisBlue' : 'text-gray-900 hover:text-trisBlue'} 
      after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:bg-trisBlue 
      after:transition-all after:duration-200 ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}`;

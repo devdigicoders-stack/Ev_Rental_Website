@@ -44,9 +44,12 @@ const Milestones = () => {
         
         {/* Section Header */}
         <div className="pt-24 pb-8 text-center shrink-0 relative z-30 bg-gradient-to-b from-[#f5f6fa] via-[#f5f6fa] to-transparent">
-          <div className="badge bg-white shadow-sm text-gray-900 mb-4 px-4 py-2 uppercase tracking-widest font-bold">Our Journey</div>
-          <h2 className="text-4xl md:text-5xl font-heading font-black uppercase text-gray-900">
-            Our <span className="text-trisBlue">Milestones</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white shadow-md border border-gray-100 mb-4">
+            <span className="w-2.5 h-2.5 rounded-full bg-trisBlue shadow-[0_0_8px_#1EA0E5]"></span>
+            <span className="text-gray-900 font-bold tracking-widest text-xs uppercase">Our Journey</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-800 uppercase tracking-tight">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisBlue to-trisGreen drop-shadow-sm">Milestones</span>
           </h2>
         </div>
 
@@ -80,7 +83,7 @@ const Milestones = () => {
             style={{ transform: `translateY(calc(${progress * 100}vh - ${progress * 100}%))` }}
           >
             {/* Added top and bottom padding so the first/last items aren't cropped against the screen edge when progress is 0 or 1 */}
-            <div className="flex flex-col gap-12 md:gap-24 py-[30vh]">
+            <div className="flex flex-col gap-8 md:gap-24 py-[30vh]">
               {milestones.map((item, index) => {
                 const isLeft = index % 2 === 0;
                 

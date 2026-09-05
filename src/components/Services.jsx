@@ -24,11 +24,14 @@ const Services = () => {
     <section className="py-20 bg-trisGray-light font-body" id="services">
       <div className="container">
         <div className="text-center mb-16">
-          <div className="badge bg-white text-trisBlue shadow-sm mb-4 px-4 py-2 uppercase tracking-widest font-bold">Offerings</div>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-gray-900 uppercase">
-            Our <span className="text-trisBlue">Services</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white shadow-md border border-gray-100 mb-4">
+            <span className="w-2.5 h-2.5 rounded-full bg-trisBlue shadow-[0_0_8px_#1EA0E5]"></span>
+            <span className="text-gray-900 font-bold tracking-widest text-xs uppercase">Offerings</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold text-gray-800 uppercase tracking-tight">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisBlue to-trisGreen drop-shadow-sm">Services</span>
           </h2>
-          <p className="text-lg text-trisGray-text max-w-2xl mx-auto mt-4 font-medium">
+          <p className="text-base text-trisGray-text max-w-2xl mx-auto mt-4 font-medium">
             Explore our diverse range of electric vehicles tailored to meet your unique mobility and business requirements.
           </p>
         </div>
