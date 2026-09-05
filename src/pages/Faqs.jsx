@@ -112,7 +112,7 @@ const Faqs = () => {
         <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
       </div>
 
-      <div className="container py-24">
+      <div className="container py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           
           {/* Left Column: Contact Us */}

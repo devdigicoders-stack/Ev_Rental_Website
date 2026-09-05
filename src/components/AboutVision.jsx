@@ -27,7 +27,7 @@ const AboutVision = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
           

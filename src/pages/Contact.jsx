@@ -69,7 +69,7 @@ const Contact = () => {
       </div>
       
       {/* Contact Info Cards Section */}
-      <section className="py-20 bg-gray-50 relative -mt-8 z-20 rounded-t-[3rem]">
+      <section className="py-12 bg-gray-50 relative -mt-8 z-20 rounded-t-[3rem]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 */}
@@ -77,9 +77,9 @@ const Contact = () => {
               <div className="w-16 h-16 bg-trisBlue/10 text-trisBlue rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisBlue group-hover:text-white">
                 <FaPhoneAlt />
               </div>
-              <h3 className="text-xl font-bold mb-2">Call Us</h3>
-              <p className="text-gray-500 mb-4 text-sm">We're here to help you</p>
-              <a href="tel:+918840204114" className="text-trisBlue font-bold text-lg hover:underline mt-auto">+91 88402 04114</a>
+              <h3 className="text-lg font-bold mb-2">Call Us</h3>
+              <p className="text-gray-500 mb-4 text-xs">We're here to help you</p>
+              <a href="tel:+918840204114" className="text-trisBlue font-bold text-base hover:underline mt-auto">+91 88402 04114</a>
             </div>
             
             {/* Card 2 */}
@@ -87,9 +87,9 @@ const Contact = () => {
               <div className="w-16 h-16 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisGreen group-hover:text-white">
                 <FaEnvelope />
               </div>
-              <h3 className="text-xl font-bold mb-2">Email Us</h3>
-              <p className="text-gray-500 mb-4 text-sm">Send us a message anytime</p>
-              <a href="mailto:Triss.electric@gmail.com" className="text-trisBlue font-bold text-lg hover:underline mt-auto truncate w-full">Triss.electric@gmail.com</a>
+              <h3 className="text-lg font-bold mb-2">Email Us</h3>
+              <p className="text-gray-500 mb-4 text-xs">Send us a message anytime</p>
+              <a href="mailto:Triss.electric@gmail.com" className="text-trisBlue font-bold text-sm hover:underline mt-auto w-full break-all">Triss.electric@gmail.com</a>
             </div>
             
             {/* Card 3 */}
@@ -97,9 +97,9 @@ const Contact = () => {
               <div className="w-16 h-16 bg-trisBlue/10 text-trisBlue rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisBlue group-hover:text-white">
                 <FaMapMarkerAlt />
               </div>
-              <h3 className="text-xl font-bold mb-2">Head Office</h3>
-              <p className="text-gray-500 mb-4 text-sm">VIP Road, Alambagh</p>
-              <p className="text-gray-900 font-bold text-sm mt-auto">Lucknow, Uttar Pradesh 226005</p>
+              <h3 className="text-lg font-bold mb-2">Head Office</h3>
+              <p className="text-gray-500 mb-4 text-xs">VIP Road, Alambagh</p>
+              <p className="text-gray-900 font-bold text-xs mt-auto">Lucknow, Uttar Pradesh 226005</p>
             </div>
             
             {/* Card 4 */}
@@ -107,9 +107,9 @@ const Contact = () => {
               <div className="w-16 h-16 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisGreen group-hover:text-white">
                 <FaClock />
               </div>
-              <h3 className="text-xl font-bold mb-2">Business Hours</h3>
-              <p className="text-gray-500 mb-4 text-sm">Monday - Saturday</p>
-              <p className="text-gray-900 font-bold text-lg mt-auto">9:00 AM - 6:00 PM</p>
+              <h3 className="text-lg font-bold mb-2">Business Hours</h3>
+              <p className="text-gray-500 mb-4 text-xs">Monday - Saturday</p>
+              <p className="text-gray-900 font-bold text-base mt-auto">9:00 AM - 6:00 PM</p>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@ const Contact = () => {
       </div>
 
       {/* FAQ CTA Section */}
-      <section className="py-24 relative bg-gray-900 overflow-hidden">
+      <section className="py-16 relative bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-trisBlue/20 to-trisGreen/20 rounded-full blur-[120px] animate-pulse"></div>
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-30"></div>

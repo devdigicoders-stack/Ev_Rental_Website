@@ -61,9 +61,9 @@ const SubscriptionPlans = () => {
   }, [isHovered]);
 
   return (
-    <section className="py-24 bg-white font-body overflow-hidden">
+    <section className="py-16 bg-white font-body overflow-hidden">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <div className="badge bg-trisBlue-light text-trisBlue mb-4 px-4 py-2 uppercase tracking-widest font-bold">Pricing</div>
           <h2 className="text-2xl md:text-4xl font-heading font-black uppercase mb-4 text-gray-900">
             SUBSCRIPTION <span className="text-trisBlue">PLANS</span>

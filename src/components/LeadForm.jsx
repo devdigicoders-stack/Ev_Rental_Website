@@ -34,7 +34,7 @@ const LeadForm = () => {
   };
 
   return (
-    <section className="py-20 bg-[#F4F4F4]" id="contact">
+    <section className="py-12 bg-[#F4F4F4]" id="contact">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
           

@@ -27,7 +27,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-trisGray-light relative overflow-hidden">
+    <section className="py-16 bg-trisGray-light relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-trisBlue-light rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-trisGreen/10 rounded-full blur-3xl opacity-50 translate-y-1/3 -translate-x-1/3"></div>

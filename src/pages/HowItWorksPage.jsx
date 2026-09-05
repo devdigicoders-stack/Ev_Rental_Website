@@ -72,9 +72,9 @@ const HowItWorksPage = () => {
       <HowItWorksComponent />
 
       {/* Prerequisites Section */}
-      <section className="py-20 bg-gray-50 relative overflow-hidden">
+      <section className="py-12 bg-gray-50 relative overflow-hidden">
         <div className="container relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-heading font-black uppercase mb-4 text-gray-900">
               What You <span className="text-trisBlue">Need</span>
             </h2>
@@ -127,7 +127,7 @@ const HowItWorksPage = () => {
       <AdvantageGrid />
 
       {/* Call To Action Section */}
-      <section className="py-24 relative bg-gray-900 overflow-hidden">
+      <section className="py-16 relative bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-trisBlue/20 to-trisGreen/20 rounded-full blur-[120px] animate-pulse"></div>
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-30"></div>

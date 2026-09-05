@@ -45,16 +45,20 @@ const advantages = [
 
 const AdvantageGrid = () => {
   return (
-    <section className="relative overflow-hidden bg-trisDark py-20" id="about">
+    <section className="relative overflow-hidden bg-trisDark py-12" id="about">
       {/* Radial Gradient Background overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(30,160,229,0.1)_0%,transparent_50%)] pointer-events-none"></div>
       
       <div className="container relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold uppercase mb-4 text-white">
-            The <span className="text-trisBlue">Tris</span> Advantage
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-trisBlue/10 border border-trisBlue/20 mb-4 backdrop-blur-sm">
+            <span className="w-2.5 h-2.5 rounded-full bg-trisBlue shadow-[0_0_8px_#1EA0E5]"></span>
+            <span className="text-trisBlue font-bold tracking-widest text-xs uppercase">Why Choose Us</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold uppercase mb-4 text-white tracking-tight">
+            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-trisBlue to-cyan-300 drop-shadow-sm">Tris</span> Advantage
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto font-medium">
+          <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto font-medium">
             Experience the future of mobility with our all-inclusive rental plans designed for maximum convenience and minimal hassle.
           </p>
         </div>

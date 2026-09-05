@@ -27,9 +27,9 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-24 bg-trisGray-light">
+    <section className="py-16 bg-trisGray-light">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-trisBlue/10 border border-trisBlue/20 mb-4">
             <span className="w-2.5 h-2.5 rounded-full bg-trisBlue"></span>
             <span className="text-trisBlue font-bold tracking-widest text-xs uppercase">Our Core Values</span>

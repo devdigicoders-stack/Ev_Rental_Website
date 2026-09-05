@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-trisDark text-white pt-20 pb-10 font-body">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           
           {/* Column 1: Company Info */}
           <div className="flex flex-col items-start">
@@ -66,17 +66,17 @@ const Footer = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               {/* Brand Colored Social Icons */}
-              <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#1877F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(24,119,242,0.6)] transition-all">
-                <FaFacebookF className="text-xl" />
+              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#1877F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(24,119,242,0.6)] transition-all">
+                <FaFacebookF className="text-lg" />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#1DA1F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(29,161,242,0.6)] transition-all">
-                <FaTwitter className="text-xl" />
+              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#1DA1F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(29,161,242,0.6)] transition-all">
+                <FaTwitter className="text-lg" />
               </a>
-              <a href="https://www.instagram.com/tris.electric?igsi=Y3EzenVob2tnNGkz" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#E1306C] hover:scale-110 hover:shadow-[0_0_15px_rgba(225,48,108,0.6)] transition-all">
-                <FaInstagram className="text-xl" />
+              <a href="https://www.instagram.com/tris.electric?igsi=Y3EzenVob2tnNGkz" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#E1306C] hover:scale-110 hover:shadow-[0_0_15px_rgba(225,48,108,0.6)] transition-all">
+                <FaInstagram className="text-lg" />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.6)] transition-all">
-                <FaLinkedinIn className="text-xl" />
+              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#0A66C2] hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.6)] transition-all">
+                <FaLinkedinIn className="text-lg" />
               </a>
             </div>
           </div>

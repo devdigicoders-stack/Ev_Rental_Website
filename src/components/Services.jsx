@@ -21,9 +21,9 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-trisGray-light font-body" id="services">
+    <section className="py-12 bg-trisGray-light font-body" id="services">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white shadow-md border border-gray-100 mb-4">
             <span className="w-2.5 h-2.5 rounded-full bg-trisBlue shadow-[0_0_8px_#1EA0E5]"></span>
             <span className="text-gray-900 font-bold tracking-widest text-xs uppercase">Offerings</span>
