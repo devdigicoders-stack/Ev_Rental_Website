@@ -55,18 +55,16 @@ const Faqs = () => {
     <div className="bg-white min-h-screen font-body">
       
       {/* Clean & Attractive Hero Section for FAQs */}
-      <div className="relative min-h-[50vh] lg:min-h-[55vh] flex items-center overflow-hidden py-16 lg:py-24 bg-gray-900">
-        {/* EV Bike Background Image on the right */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-3/5 h-full opacity-35 lg:opacity-60 pointer-events-none flex items-center justify-end overflow-hidden">
-          <img 
-            src="/hero-bike.png" 
-            alt="EV Bike" 
-            className="max-h-[85%] object-contain object-right"
-          />
-        </div>
-
-        {/* Gradient overlay: dark on left for text readability, clearer on right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/75 to-black/30"></div>
+      <div 
+        className="relative min-h-[50vh] lg:min-h-[55vh] flex items-center overflow-hidden py-16 lg:py-24 bg-gray-900"
+        style={{
+          backgroundImage: "url('/ev_fleet_hero_bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center right",
+        }}
+      >
+        {/* Gradient overlay: dark on left for text readability, clearer on right for vehicles */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/25"></div>
 
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-xl text-left">

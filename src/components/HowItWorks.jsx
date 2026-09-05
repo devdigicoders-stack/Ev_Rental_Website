@@ -42,15 +42,15 @@ const HowItWorks = () => {
         </div>
 
         <div className="relative w-full mt-12">
-          {/* Connecting Line (Desktop) - Adjusted for scroll */}
-          <div className="hidden lg:block absolute top-[40px] left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-trisBlue to-transparent opacity-30 z-0"></div>
+          {/* Connecting Line (Desktop) aligned with center of icons */}
+          <div className="hidden lg:block absolute top-[80px] left-20 right-20 h-[2px] bg-gradient-to-r from-transparent via-trisBlue/30 to-transparent z-0"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 px-4 relative z-10">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
                 <div 
-                  className="bg-white p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-gray-100 text-center flex flex-col items-center group relative transition-transform duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(30,160,229,0.1)]" 
+                  className="bg-white p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.05)] border border-gray-100 text-center flex flex-col items-center group relative transition-transform duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(30,160,229,0.1)] h-full" 
                   key={index}
                 >
                   {/* Step Number Badge */}

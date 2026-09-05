@@ -110,21 +110,21 @@ const SubscriptionPlans = () => {
                       {plan.name}
                     </h3>
 
-                    <div className="grid grid-cols-1 gap-y-4 mb-8 flex-grow">
+                    <div className="divide-y divide-gray-100 mb-6 flex-grow">
                       {plan.specs.slice(0, 4).map((spec, index) => {
                         const Icon = spec.icon;
                         return (
-                          <div key={index} className="flex items-center gap-3">
-                            <div 
-                              className="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
-                              style={{ backgroundColor: `${plan.color}15`, color: plan.color }}
-                            >
-                              <Icon className="w-3.5 h-3.5" />
+                          <div key={index} className="flex items-center justify-between py-2.5">
+                            <div className="flex items-center gap-2.5">
+                              <div 
+                                className="w-7 h-7 rounded-full flex items-center justify-center shrink-0"
+                                style={{ backgroundColor: `${plan.color}15`, color: plan.color }}
+                              >
+                                <Icon className="w-3.5 h-3.5" />
+                              </div>
+                              <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">{spec.label}</span>
                             </div>
-                            <div>
-                              <div className="text-[9px] font-bold text-gray-400 uppercase tracking-wider">{spec.label}</div>
-                              <div className="text-sm font-semibold text-gray-800 leading-tight">{spec.value}</div>
-                            </div>
+                            <span className="text-xs font-bold text-gray-900">{spec.value}</span>
                           </div>
                         );
                       })}

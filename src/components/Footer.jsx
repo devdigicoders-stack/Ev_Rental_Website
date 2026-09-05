@@ -22,13 +22,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-heading font-bold mb-6 text-white uppercase tracking-wider relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-1 after:bg-trisBlue">Quick Info</h4>
             <ul className="space-y-3 font-medium">
-              <li><Link to="/about" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> About us</Link></li>
-              <li><Link to="/how-it-works" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> How it works</Link></li>
-              <li><Link to="/plans" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> Subscription Plans</Link></li>
-              <li><Link to="/faqs" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> FAQs</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> Contact us</Link></li>
-              <li><Link to="/terms" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> Terms & Conditions</Link></li>
-              <li><Link to="/privacy" className="text-gray-400 hover:text-trisBlue transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-trisBlue rounded-full"></span> Privacy Policy</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-trisBlue hover:translate-x-1.5 transition-all flex items-center gap-2"><span className="w-1.5 h-1.5 bg-trisBlue rounded-full"></span> About us</Link></li>
+              <li><Link to="/how-it-works" className="text-gray-400 hover:text-trisBlue hover:translate-x-1.5 transition-all flex items-center gap-2"><span className="w-1.5 h-1.5 bg-trisBlue rounded-full"></span> How it works</Link></li>
+              <li><Link to="/plans" className="text-gray-400 hover:text-trisBlue hover:translate-x-1.5 transition-all flex items-center gap-2"><span className="w-1.5 h-1.5 bg-trisBlue rounded-full"></span> Subscription Plans</Link></li>
+              <li><Link to="/faqs" className="text-gray-400 hover:text-trisBlue hover:translate-x-1.5 transition-all flex items-center gap-2"><span className="w-1.5 h-1.5 bg-trisBlue rounded-full"></span> FAQs</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-trisBlue hover:translate-x-1.5 transition-all flex items-center gap-2"><span className="w-1.5 h-1.5 bg-trisBlue rounded-full"></span> Contact us</Link></li>
             </ul>
           </div>
           

@@ -11,18 +11,16 @@ const Contact = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* Clean & Attractive Hero Section for Contact Page */}
-      <div className="relative min-h-[50vh] lg:min-h-[55vh] flex items-center overflow-hidden py-16 lg:py-24 bg-gray-900">
-        {/* EV Bike Background Image on the right */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-3/5 h-full opacity-35 lg:opacity-60 pointer-events-none flex items-center justify-end overflow-hidden">
-          <img 
-            src="/hero-bike.png" 
-            alt="EV Bike" 
-            className="max-h-[85%] object-contain object-right"
-          />
-        </div>
-
-        {/* Gradient overlay: dark on left for text readability, clearer on right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/75 to-black/30"></div>
+      <div 
+        className="relative min-h-[50vh] lg:min-h-[55vh] flex items-center overflow-hidden py-16 lg:py-24 bg-gray-900"
+        style={{
+          backgroundImage: "url('/ev_fleet_hero_bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center right",
+        }}
+      >
+        {/* Gradient overlay: dark on left for text readability, clearer on right for vehicles */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/25"></div>
 
         <div className="container relative z-10 mx-auto px-6 md:px-12">
           <div className="max-w-xl text-left">
@@ -69,44 +67,66 @@ const Contact = () => {
       <section className="py-12 bg-gray-50 relative -mt-8 z-20 rounded-t-[3rem]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col items-center group">
-              <div className="w-16 h-16 bg-trisBlue/10 text-trisBlue rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisBlue group-hover:text-white">
+            {/* Card 1: Call Us */}
+            <div className="bg-white p-7 sm:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 text-center flex flex-col items-center group h-full">
+              <div className="w-14 h-14 bg-trisBlue/10 text-trisBlue rounded-full flex items-center justify-center text-xl mb-5 transition-colors group-hover:bg-trisBlue group-hover:text-white shrink-0">
                 <FaPhoneAlt />
               </div>
-              <h3 className="text-lg font-bold mb-2">Call Us</h3>
-              <p className="text-gray-500 mb-4 text-xs">We're here to help you</p>
-              <a href="tel:+918840204114" className="text-trisBlue font-bold text-base hover:underline mt-auto">+91 88402 04114</a>
+              <h3 className="text-base sm:text-lg font-heading font-bold mb-1.5 text-gray-900">Call Us</h3>
+              <p className="text-gray-500 mb-4 text-xs font-medium">Mon-Sat from 9am to 6pm</p>
+              <div className="mt-auto pt-2">
+                <a href="tel:+918840204114" className="text-trisBlue font-bold text-sm sm:text-base hover:underline transition-colors block">
+                  +91 88402 04114
+                </a>
+              </div>
             </div>
             
-            {/* Card 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col items-center group">
-              <div className="w-16 h-16 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisGreen group-hover:text-white">
+            {/* Card 2: Email Us */}
+            <div className="bg-white p-7 sm:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 text-center flex flex-col items-center group h-full">
+              <div className="w-14 h-14 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center text-xl mb-5 transition-colors group-hover:bg-trisGreen group-hover:text-white shrink-0">
                 <FaEnvelope />
               </div>
-              <h3 className="text-lg font-bold mb-2">Email Us</h3>
-              <p className="text-gray-500 mb-4 text-xs">Send us a message anytime</p>
-              <a href="mailto:Triss.electric@gmail.com" className="text-trisBlue font-bold text-sm hover:underline mt-auto w-full break-all">Triss.electric@gmail.com</a>
+              <h3 className="text-base sm:text-lg font-heading font-bold mb-1.5 text-gray-900">Email Us</h3>
+              <p className="text-gray-500 mb-4 text-xs font-medium">Send us a message anytime</p>
+              <div className="mt-auto pt-2 w-full">
+                <a href="mailto:Triss.electric@gmail.com" className="text-trisBlue font-bold text-xs sm:text-sm hover:underline transition-colors block break-all">
+                  Triss.electric@gmail.com
+                </a>
+              </div>
             </div>
             
-            {/* Card 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col items-center group">
-              <div className="w-16 h-16 bg-trisBlue/10 text-trisBlue rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisBlue group-hover:text-white">
+            {/* Card 3: Head Office */}
+            <div className="bg-white p-7 sm:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 text-center flex flex-col items-center group h-full">
+              <div className="w-14 h-14 bg-trisBlue/10 text-trisBlue rounded-full flex items-center justify-center text-xl mb-5 transition-colors group-hover:bg-trisBlue group-hover:text-white shrink-0">
                 <FaMapMarkerAlt />
               </div>
-              <h3 className="text-lg font-bold mb-2">Head Office</h3>
-              <p className="text-gray-500 mb-4 text-xs">VIP Road, Alambagh</p>
-              <p className="text-gray-900 font-bold text-xs mt-auto">Lucknow, Uttar Pradesh 226005</p>
+              <h3 className="text-base sm:text-lg font-heading font-bold mb-1.5 text-gray-900">Head Office</h3>
+              <p className="text-gray-500 mb-2 text-xs font-medium">VIP Road, Alambagh</p>
+              <div className="mt-auto pt-2">
+                <a 
+                  href="https://maps.google.com/?q=VIP+Road+Alambagh+Lucknow+Uttar+Pradesh+226005" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-900 hover:text-trisBlue font-bold text-xs transition-colors block"
+                >
+                  Lucknow, UP 226005
+                  <span className="block text-[11px] text-trisBlue font-semibold mt-0.5">View on Map →</span>
+                </a>
+              </div>
             </div>
             
-            {/* Card 4 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col items-center group">
-              <div className="w-16 h-16 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center text-2xl mb-6 transition-colors group-hover:bg-trisGreen group-hover:text-white">
+            {/* Card 4: Business Hours */}
+            <div className="bg-white p-7 sm:p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 text-center flex flex-col items-center group h-full">
+              <div className="w-14 h-14 bg-trisGreen/10 text-trisGreen rounded-full flex items-center justify-center text-xl mb-5 transition-colors group-hover:bg-trisGreen group-hover:text-white shrink-0">
                 <FaClock />
               </div>
-              <h3 className="text-lg font-bold mb-2">Business Hours</h3>
-              <p className="text-gray-500 mb-4 text-xs">Monday - Saturday</p>
-              <p className="text-gray-900 font-bold text-base mt-auto">9:00 AM - 6:00 PM</p>
+              <h3 className="text-base sm:text-lg font-heading font-bold mb-1.5 text-gray-900">Business Hours</h3>
+              <p className="text-gray-500 mb-4 text-xs font-medium">Monday - Saturday</p>
+              <div className="mt-auto pt-2">
+                <span className="text-gray-900 font-bold text-sm sm:text-base block">
+                  9:00 AM - 6:00 PM
+                </span>
+              </div>
             </div>
           </div>
         </div>
